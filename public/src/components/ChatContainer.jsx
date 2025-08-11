@@ -17,7 +17,7 @@ export default function ChatContainer({ currentChat }) {
                             <div className="user-details">
                                 <div className="avatar">
                                     <img 
-                                        src={`data:image/svg+xml;base64,${currentChat.avatarImage}`} 
+                                        src={(currentChat.avatarImage.includes(`data:image/svg+xml;base64,`)) ? currentChat.avatarImage : `data:image/svg+xml;base64,${currentChat.avatarImage}`} 
                                         alt='avatar'
                                     />
                                 </div>

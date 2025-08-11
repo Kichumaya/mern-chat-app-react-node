@@ -9,4 +9,5 @@ export default function Messages() {
 
 const Container = styled.div`
     width: 80%;
+    color: white;
 `
